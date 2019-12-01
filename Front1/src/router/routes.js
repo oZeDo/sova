@@ -8,6 +8,7 @@ const routes = [
       { path: 'cuisine', component: () => import('pages/Cuisine.vue') },
       { path: 'dishes', component: () => import('pages/Dishes.vue') },
       { path: 'otzyv', component: () => import('pages/Otzyv.vue') },
+      { path: 'static', component: () => import('pages/Static.vue') },
       { path: 'final', component: () => import('pages/Final.vue') }
     ]
   }

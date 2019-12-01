@@ -1,5 +1,5 @@
 <template name="cuisine">
-  <q-page>
+  <q-page class="sd">
     <q-header>
       <q-toolbar class="bg-yellow-8 align-center flex justify-between">
         <p class="q-ma-none fz">Выберите кухню</p>
@@ -193,5 +193,9 @@ export default {
 }
 .fz{
   font-size: 20px;
+}
+.sd{
+  background-image: url(../statics/bgLight.png);
+  background-size: cover
 }
 </style>

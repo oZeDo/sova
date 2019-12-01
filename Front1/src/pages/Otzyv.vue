@@ -1,5 +1,5 @@
 <template>
-    <q-page>
+    <q-page class="sd">
         <div class="column flex items-center" >
             <div class="col text-grey-9 text-bold ozenka text-center" >Оцените этот нереальный рисунок карандашом</div>
             <div class="col">
@@ -58,5 +58,9 @@ export default {
 }
 .socity {
     margin-bottom: 100px;
+}
+.sd{
+  background-image: url(../statics/bgLight.png);
+  background-size: cover
 }
 </style>

@@ -1,5 +1,5 @@
 <template name="dishes">
-  <q-page>
+  <q-page class="sd">
     <q-header>
       <q-toolbar class="q-pt-sm q-pb-sm q-pl-md q-pr-md bg-yellow-8 flex justify-between">
         <div>
@@ -21,8 +21,8 @@
         <img src="../statics/guy.svg" alt="guy">
       </q-toolbar>
     </q-header>
-    <div class="column q-pa-md">
-      <router-link class="td col-12" to="/final"><div class="q-mb-sm" v-for="(dish, i) in lor" :key="i">
+    <div class="column flex items-center q-pa-md">
+      <router-link class="td iag col-12" to="/final"><div class="q-mb-sm" v-for="(dish, i) in lor" :key="i">
         <q-card @click="posti(i)" class="my-card">
           <img class="imag" :src="url[i]">
 
@@ -74,5 +74,15 @@ export default {
 <style lang="scss" scoped>
 .td{
   text-decoration: none;
+}
+.iag{
+  max-width: 600px;
+}
+.sd{
+  background-image: url(../statics/bgLight.png);
+  background-size: cover
+}
+.imag{
+  border: 3px solid $grey-9;
 }
 </style>

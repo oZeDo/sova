@@ -1,5 +1,5 @@
 <template name="final">
-  <q-page class="">
+  <q-page class="sd">
     <q-header>
         <q-toolbar class="q-pt-sm q-pb-sm q-pl-md q-pr-md bg-yellow-8 flex justify-between">
             <div>
@@ -12,7 +12,14 @@
     </q-header>
     <div class="q-pa-md">
         <q-img class="q-mb-md" :src="url" alt="Photo"></q-img>
-        <div class="q-mb-md text-grey-9">{{ dishu.description }}</div>
+        <div class="q-mb-md text-grey-9" style="max-width: 350px">
+          <q-input
+            v-model="dishu.description"
+            filled
+            readonly
+            type="textarea"
+          />
+        </div>
         <div class="q-mb-md text-grey-9 text-h5">Что купить?</div>
         <div>
             <ol>
@@ -49,4 +56,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.sd{
+  background-image: url(../statics/bgLight.png);
+  background-size: cover
+}
 </style>
